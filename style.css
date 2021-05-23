@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(204, 199, 185);
+}
+
+h1{
+font-family: 'Pattaya', sans-serif;
+font-size: 60px;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  color: rgb(101, 50, 57);
+}
+
+#logoimg{
+  padding-right: 10px;
+  pointer-events: none; 
+  width: 110px;
+  height: 100px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+  
+.menu a{
+  font-family: 'Abril Fatface', cursive;
+  padding: 14px;
+  text-decoration: none;
+  transition: all 0.5s;
+  color: rgb(101, 50, 57);
+  font-size: 20px;
+}
+
+.menu a:hover{
+color: rgb(172, 159, 160);
+font-size: 22px;
+}
+
+.menu{
+  margin-left: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+.coluna{
+margin-left: 320px;
+margin-right: 280px;
+margin-top: 150px;
+}
+
+.coluna img{
+  height: 400px;
+  width: 400px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.produtos h2{
+  color: rgb(145, 115, 120);
+  font-size: 40px;
+  font-family:'Pattaya', sans-serif;
+  margin-top: 100px;
+  pointer-events: none;
+  padding-left: 50px;
+  user-select: none;
+}
+
+.produtos h3{
+color: black;
+font-family:'Pattaya', sans-serif;
+padding-left: 50px;
+padding-right: 50px;
+text-align: center;
+bottom: 0px;
+pointer-events: none;
+user-select: none;
+}
+
+
+.boxes, .roupas, .musica, .acessorios{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  border-right: 2px dotted white;
+  border-left: 2px dotted white;
+}
+
+
+.box, .rp, .msc, .ac{
+  transition: opacity 0.5s;
+}
+
+.box:hover, .rp:hover, .msc:hover, .ac:hover{
+opacity: 70%;
+cursor: pointer;
+border: 0.5px solid white;
+
+}
+
+#manchete{
+  color: rgb(136, 90, 96);
+  margin-left: 50px;
+  user-select: none;
+}
+
+#final {
+color: rgb(136, 90, 96);
+font-family: 'Abril Fatface', cursive;
+text-decoration: none;
+position: absolute;
+margin-bottom: 20px;
+font-size: 20px;
+right: 500px;
+}
+
+a:link, a:visited{
+  text-decoration: none;
+ color:rgb(136, 90, 96);
+}
+
+a:active{
+  color: rgb(194, 159, 163);
+}
+
+
+
+.redes{
+height: 60px;
+display: flex;
+opacity: 20%;
+margin: 10px;
+transition: all 1s;
+user-select: none;
+
+}
+
+.redes:hover{
+opacity: 80%;
+height: 62px;
+}
+
+.redesdiv{
+position: fixed;
+right: 20px;
+bottom: 500px;
+}
+
+h4{
+  font-weight: bold
+}
+
+
+
+
+
+
+@media screen and (max-width: 1226px) {
+
+.box:hover, .rp:hover, .msc:hover, .ac:hover{
+position: relative;
+display: grid;
+}
+
+}
+
+@media screen and (max-width: 1030px) {
+.coluna{
+margin-left: 0px;
+margin-right: 0px;
+margin: 20px;
+}
+
+}
+
+@media screen and (max-width: 634px) {
+.coluna img{
+margin: 0px;
+}
+
+}
+
+
+
+@media screen and (max-width: 634px) {
+.coluna img{
+margin: 0px;
+}
+
+}
